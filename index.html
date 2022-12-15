@@ -1,0 +1,87 @@
+<html>
+<head>
+
+<style>
+#pageTitle{
+ text-align: center;
+}
+#containerList{
+  display:flex;
+  justify-content: center;
+    flex-wrap: wrap;
+
+  width: 100%;
+}
+
+.title{
+  font-size: 16px;
+  font-family: Arial;
+}
+.cardContainer{
+   width: 200px;
+   padding: 10px;
+
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="containerList"></div>
+
+</body>
+
+
+<script>
+
+function loadTitles(data){
+    console.log("loadtitles");
+	console.log(data["items"].length);
+	var containerList = document.getElementById("containerList");
+	var channelList = data["items"];
+	for (var x=0; x<channelList.length; x++){
+	   var item = channelList[x];
+	   console.log(item);
+	   var title = item["title"];
+	   var url = item["url"];
+	   var icon = item["icon"];
+
+		var cardContainer = document.createElement("DIV");
+		cardContainer.className = "cardContainer"; 
+		var gameUrlEl = document.createElement("A");
+		//var titleEl = document.createElement("DIV");
+		var posterEl = document.createElement("IMG");
+				posterEl.padding = "10px";
+
+		//titleEl.innerHTML = title;
+		//titleEl.className = "title";
+
+		posterEl.src = "./icons/"+icon;
+		gameUrlEl.href =  url;
+		gameUrlEl.appendChild(posterEl);
+		//gameUrlEl.appendChild(titleEl);
+		cardContainer.appendChild(gameUrlEl);
+		containerList.appendChild(cardContainer);
+	}
+
+		
+
+	
+	
+}
+
+function fetchTitles(filename){
+	console.log("fetchTitles");
+fetch(filename)
+  .then((response) => response.json())
+  .then(loadTitles);
+  
+}
+
+
+fetchTitles("channels.json");
+
+</script>
+
+</html>
