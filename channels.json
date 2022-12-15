@@ -20,5 +20,14 @@
 		"title": "Hope Channel NZ",
 		"url": "https://www.hopechannel.nz/watch",
 		"icon": "hopechannel.png"
-	}]
+	}, {
+		"title": "Sky Sport 1",
+		"url": "https://www.skysportnow.co.nz/live/219026",
+		"icon": "skysport1.png"
+	}, {
+		"title": "Shine TV",
+		"url": "https://www.shinetv.co.nz/videos/live",
+		"icon": "shinetv.png"
+	}
+	]
 }
