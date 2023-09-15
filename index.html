@@ -9,7 +9,7 @@
   display:flex;
   justify-content: center;
     flex-wrap: wrap;
-
+  align-items: center;
   width: 100%;
 }
 
@@ -20,6 +20,7 @@
 .cardContainer{
    width: 200px;
    padding: 10px;
+   text-align: center;
 
 }
 </style>
@@ -53,6 +54,8 @@ function loadTitles(data){
 		//var titleEl = document.createElement("DIV");
 		var posterEl = document.createElement("IMG");
 				posterEl.padding = "10px";
+				posterEl.style.width="10vw";
+				
 
 		//titleEl.innerHTML = title;
 		//titleEl.className = "title";

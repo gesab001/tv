@@ -25,6 +25,11 @@
 		"title": "Hope Channel Philippines",
 		"url": "https://hopetv.ph/watch",
 		"icon": "hopechannelphilippines.png"
-	}
+	},
+	 {
+		"title": "3ABN",
+		"url": "https://3abnplus.tv/categories/category-8xMkCnggSZc",
+		"icon": "3abn.png"
+	}	
 	]
 }
