@@ -32,6 +32,31 @@
 		"title": "For My People Ministry",
 		"url": "https://www.youtube.com/@ernieknoll",
 		"icon": "formypeople.png"
+	},
+	 {
+		"title": "Little Light Studios",
+		"url": "https://www.youtube.com/littlelightstudios",
+		"icon": "littlelightstudios.png"
+	},
+    {
+		"title": "Apocalypse Ministries",
+		"url": "https://www.apocalypseministries.org/aptv/",
+		"icon": "apocalypseministries.jpg"
+	},
+	{
+		"title": "Forerunner Chronicles",
+		"url": "https://www.youtube.com/@TheForerunner777/videos",
+		"icon": "forerunnerchronicles.webp"
+	},
+	{
+		"title": "Amazing Facts",
+		"url": "https://www.amazingfacts.org/media-library",
+		"icon": "amazing-facts.webp"
+	},
+	 {
+		"title": "It Is Written",
+		"url": "https://itiswritten.tv/live",
+		"icon": "itiswritten.png"
 	}
 	]
 }
