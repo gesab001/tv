@@ -1,18 +1,5 @@
 {
 	"items": [{
-		"title": "TVNZ 1",
-		"url": "https://www.tvnz.co.nz/livetv/tvnz-1",
-		"icon": "tvnz1.png"
-	}, {
-		"title": "TVNZ 2",
-		"url": "https://www.tvnz.co.nz/livetv/tvnz-2",
-		"icon": "tvnz2.png"
-
-	}, {
-		"title": "TVNZ Duke",
-		"url": "https://www.tvnz.co.nz/livetv/tvnz-duke",
-		"icon": "tvnzduke.png"
-	}, {
 		"title": "First Light",
 		"url": "https://tulixdvr1.tulix.tv/?gid=firstlight",
 		"icon": "firstlight.png"
