@@ -14,9 +14,24 @@
 		"icon": "hopechannelphilippines.png"
 	},
 	 {
+		"title": "Hope Channel International",
+		"url": "https://hopetv.org/watch/international",
+		"icon": "hopechannelinternational.png"
+	},
+	 {
 		"title": "3ABN",
 		"url": "https://3abnplus.tv/categories/category-8xMkCnggSZc",
 		"icon": "3abn.png"
-	}	
+	},
+	 {
+		"title": "Prophesy Again",
+		"url": "https://www.prophesyagain.org/",
+		"icon": "prophesyagain.png"
+	},
+	 {
+		"title": "For My People Ministry",
+		"url": "https://www.youtube.com/@ernieknoll",
+		"icon": "formypeople.png"
+	}
 	]
 }

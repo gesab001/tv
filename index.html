@@ -18,9 +18,15 @@
   font-family: Arial;
 }
 .cardContainer{
-   width: 200px;
+   height: 200px;
+   width: 300px;
    padding: 10px;
    text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content:flex-end;
+
+
 
 }
 </style>
@@ -51,21 +57,24 @@ function loadTitles(data){
 		var cardContainer = document.createElement("DIV");
 		cardContainer.className = "cardContainer"; 
 		var gameUrlEl = document.createElement("A");
-		//var titleEl = document.createElement("DIV");
+		var titleEl = document.createElement("A");
 		var posterEl = document.createElement("IMG");
 				posterEl.padding = "10px";
 				posterEl.style.width="10vw";
+				posterEl.style.minWidth = "100px";
 				
 
-		//titleEl.innerHTML = title;
-		//titleEl.className = "title";
+		titleEl.innerHTML = title;
+		titleEl.className = "title";
+		titleEl.href = url;
 
 		posterEl.src = "./icons/"+icon;
 		gameUrlEl.href =  url;
 		gameUrlEl.appendChild(posterEl);
-		//gameUrlEl.appendChild(titleEl);
 		cardContainer.appendChild(gameUrlEl);
+		cardContainer.appendChild(titleEl);
 		containerList.appendChild(cardContainer);
+
 	}
 
 		
