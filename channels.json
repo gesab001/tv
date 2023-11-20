@@ -92,6 +92,56 @@
 		"title": "TVNZ Duke",
 		"url": "https://www.tvnz.co.nz/livetv/tvnz-duke",
 		"icon": "tvnz_duke.webp"
+	},
+	{
+		"title": "Sky Open",
+		"url": "https://www.skygo.co.nz/live-tv/0101?playerReferrer=LiveTV",
+		"icon": "skyopen.webp"
+	},
+	{
+		"title": "Three",
+		"url": "https://www.threenow.co.nz/live-tv-guide/three",
+		"icon": "three.png"
+	},
+	{
+		"title": "WBTV Reality",
+		"url": "https://www.threenow.co.nz/live-tv-guide/wbtv-reality",
+		"icon": "wb_reality.png"
+	},
+	{
+		"title": "France 24",
+		"url": "https://www.france24.com/en/live",
+		"icon": "france24.png"
+	},
+	{
+		"title": "Sky Open",
+		"url": "https://www.skygo.co.nz/live-tv/0101?playerReferrer=LiveTV",
+		"icon": "skyopen.webp"
+	},
+	{
+		"title": "Sky Open",
+		"url": "https://www.skygo.co.nz/live-tv/0101?playerReferrer=LiveTV",
+		"icon": "skyopen.webp"
+	},
+	{
+		"title": "Sky Open",
+		"url": "https://www.skygo.co.nz/live-tv/0101?playerReferrer=LiveTV",
+		"icon": "skyopen.webp"
+	},
+	{
+		"title": "Sky Open",
+		"url": "https://www.skygo.co.nz/live-tv/0101?playerReferrer=LiveTV",
+		"icon": "skyopen.webp"
+	},
+	{
+		"title": "Sky Open",
+		"url": "https://www.skygo.co.nz/live-tv/0101?playerReferrer=LiveTV",
+		"icon": "skyopen.webp"
+	},
+	{
+		"title": "Sky Open",
+		"url": "https://www.skygo.co.nz/live-tv/0101?playerReferrer=LiveTV",
+		"icon": "skyopen.webp"
 	}
 	]
 }
