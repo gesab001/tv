@@ -1,0 +1,147 @@
+{
+	"items": [{
+		"title": "First Light",
+		"url": "https://tulixdvr1.tulix.tv/?gid=firstlight",
+		"icon": "firstlight.png"
+	}, {
+		"title": "Hope Channel NZ",
+		"url": "https://www.hopechannel.nz/watch",
+		"icon": "hopechannel.png"
+	},
+	 {
+		"title": "Hope Channel Philippines",
+		"url": "https://hopetv.ph/watch",
+		"icon": "hopechannelphilippines.png"
+	},
+	 {
+		"title": "Hope Channel International",
+		"url": "https://hopetv.org/watch/international",
+		"icon": "hopechannelinternational.png"
+	},
+	 {
+		"title": "3ABN",
+		"url": "https://3abnplus.tv/categories/category-8xMkCnggSZc",
+		"icon": "3abn.png"
+	},
+	 {
+		"title": "Prophesy Again",
+		"url": "https://www.prophesyagain.org/",
+		"icon": "prophesyagain.png"
+	},
+	 {
+		"title": "For My People Ministry",
+		"url": "https://www.youtube.com/@ernieknoll",
+		"icon": "formypeople.png"
+	},
+	 {
+		"title": "Little Light Studios",
+		"url": "https://www.youtube.com/littlelightstudios",
+		"icon": "littlelightstudios.png"
+	},
+    {
+		"title": "Apocalypse Ministries",
+		"url": "https://www.apocalypseministries.org/aptv/",
+		"icon": "apocalypseministries.jpg"
+	},
+	{
+		"title": "Forerunner Chronicles",
+		"url": "https://www.youtube.com/@TheForerunner777/videos",
+		"icon": "forerunnerchronicles.webp"
+	},
+	{
+		"title": "Amazing Facts",
+		"url": "https://www.amazingfacts.org/media-library",
+		"icon": "amazing-facts.webp"
+	},
+	 {
+		"title": "It Is Written",
+		"url": "https://itiswritten.tv/live",
+		"icon": "itiswritten.png"
+	},
+	 {
+		"title": "Hope Through Prophecy",
+		"url": "https://www.youtube.com/@HopeProphecy",
+		"icon": "hopethroughprophecy.jpg"
+	},
+	 {
+		"title": "Al Jazeera",
+		"url": "https://www.aljazeera.com/live",
+		"icon": "aljazeera.webp"
+	},
+	 {
+		"title": "Shine",
+		"url": "https://www.shinetv.co.nz/videos/live",
+		"icon": "shine.webp"
+	},
+	 {
+		"title": "Daystar",
+		"url": "https://daystar.tv/player/37099/37099",
+		"icon": "daystar.webp"
+	},
+	{
+		"title": "TVNZ 1",
+		"url": "https://www.tvnz.co.nz/livetv/tvnz-1",
+		"icon": "tvnz_one.webp"
+	},
+	{
+		"title": "TVNZ 2",
+		"url": "https://www.tvnz.co.nz/livetv/tvnz-2",
+		"icon": "tvnz_two.webp"
+	},
+	{
+		"title": "TVNZ Duke",
+		"url": "https://www.tvnz.co.nz/livetv/tvnz-duke",
+		"icon": "tvnz_duke.webp"
+	},
+	{
+		"title": "Sky Open",
+		"url": "https://www.skygo.co.nz/live-tv/0101?playerReferrer=LiveTV",
+		"icon": "skyopen.webp"
+	},
+	{
+		"title": "Three",
+		"url": "https://www.threenow.co.nz/live-tv-guide/three",
+		"icon": "three.png"
+	},
+	{
+		"title": "WBTV Reality",
+		"url": "https://www.threenow.co.nz/live-tv-guide/wbtv-reality",
+		"icon": "wb_reality.png"
+	},
+	{
+		"title": "France 24",
+		"url": "https://www.france24.com/en/live",
+		"icon": "france24.png"
+	},
+	{
+		"title": "RT",
+		"url": "https://www.rt.com/on-air/",
+		"icon": "rt.png"
+	},
+	{
+		"title": "Sky Open",
+		"url": "https://www.skygo.co.nz/live-tv/0101?playerReferrer=LiveTV",
+		"icon": "skyopen.webp"
+	},
+	{
+		"title": "Sky Open",
+		"url": "https://www.skygo.co.nz/live-tv/0101?playerReferrer=LiveTV",
+		"icon": "skyopen.webp"
+	},
+	{
+		"title": "Sky Open",
+		"url": "https://www.skygo.co.nz/live-tv/0101?playerReferrer=LiveTV",
+		"icon": "skyopen.webp"
+	},
+	{
+		"title": "Sky Open",
+		"url": "https://www.skygo.co.nz/live-tv/0101?playerReferrer=LiveTV",
+		"icon": "skyopen.webp"
+	},
+	{
+		"title": "Sky Open",
+		"url": "https://www.skygo.co.nz/live-tv/0101?playerReferrer=LiveTV",
+		"icon": "skyopen.webp"
+	}
+	]
+}
