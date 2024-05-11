@@ -18,11 +18,11 @@
             "dwight_nelson",
             "carlton_knott"
         ],
-        "family": [],
-        "church": [],
+        "family": ["family"],
+        "church": ["brentwood_sda_church", "dubai_central_sda_church", "royal_oak_sda", "prophesy_again_sda_church", "auckland_international_sda_church","andrews_university_sda_church", "loma_linda_sda_church", "naval_sda_church", "filsdak_church"],
         "sabbath_school": [],
-        "karaoke": [],
-		"funerals": [],
+        "karaoke": ["musicassets"],
+		"funerals": ["funerals"],
 		"weddings": []
     }
 }
