@@ -4,38 +4,22 @@ import json
 
 jsonfiles = shuffle()
 
-def getJsonObj(filename):
+for filename in jsonfiles:
   fileopen = open(filename, "r", encoding="utf-8")
   jsonobj = json.loads(fileopen.read())
-  fileopen.close()
-  return jsonobj
-
-def updateJsonObj(video_id):
-      command = "yt-dlp "+ video_id + "  --write-info-json --skip-download"
-      subprocess.call(command, shell=True)
-
-def stream(jsonobj):      
-      formats = jsonobj["formats"]
-      totalformats = len(formats)
-      formattype = 13
-      formatobj = formats[formattype]
-      print(formatobj)
-      url = formatobj["url"]
-      command = 'ffmpeg -re -i ' +  '"'+url+'"' + ' -vcodec libx264 -vprofile baseline -g 30 -acodec aac -strict -2  -preset fast -b:v 5M -maxrate 6M -bufsize 3M -threads 4 -f flv rtmp://a.rtmp.youtube.com/live2/r01k-tjxy-22r2-dudy-5mdf'
-      subprocess.call(command, shell=True)
-      
-for filename in jsonfiles:
-  jsonobj = getJsonObj(filename)
   try:
-    video_id = jsonobj["id"]
-
-    #proceed = input("continue: ")
-    #if proceed=="y":
+    formats = jsonobj["formats"]
+    totalformats = len(formats)
+    formattype = 13
+    formatobj = formats[formattype]
+    print(formatobj)
+    url = formatobj["url"]
+    proceed = input("continue: ")
+    if proceed=="y":
       #command = 'ffmpeg -re -i ' +  '"'+url+'"' + ' -vcodec libx264 -vprofile baseline -g 30 -acodec aac -strict -2  -preset fast -b:v 5M -maxrate 6M -bufsize 3M -threads 4 -f flv rtmp://192.168.1.17:1935/show/stream'
-    updateJsonObj(video_id)
-    jsonobj = getJsonObj(filename)
-    stream(jsonobj)
+      command = 'ffmpeg -re -i ' +  '"'+url+'"' + ' -vcodec libx264 -vprofile baseline -g 30 -acodec aac -strict -2  -preset fast -b:v 5M -maxrate 6M -bufsize 3M -threads 4 -f flv rtmp://a.rtmp.youtube.com/live2/r01k-tjxy-22r2-dudy-5mdf'
 
+      subprocess.call(command, shell=True)
     else:
       break    
   except:
