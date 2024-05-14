@@ -3,6 +3,7 @@ from create_playlist_json import shuffle
 import json
 
 jsonfiles = shuffle()
+stream_key = input("stream_key: ")
 
 def getJsonObj(filename):
   fileopen = open(filename, "r", encoding="utf-8")
@@ -21,8 +22,9 @@ def stream(jsonobj):
       formatobj = formats[formattype]
       print(formatobj)
       url = formatobj["url"]
-      command = 'ffmpeg -re -i ' +  '"'+url+'"' + ' -vcodec libx264 -vprofile baseline -g 30 -acodec aac -strict -2  -preset fast -b:v 5M -maxrate 6M -bufsize 3M -threads 4 -f flv rtmp://a.rtmp.youtube.com/live2/r01k-tjxy-22r2-dudy-5mdf'
+      command = 'ffmpeg -re -i ' +  '"'+url+'"' + ' -vcodec libx264 -vprofile baseline -g 30 -acodec aac -strict -2  -preset fast -b:v 5M -maxrate 6M -bufsize 3M -threads 4 -f flv rtmp://a.rtmp.youtube.com/live2/'+stream_key
       subprocess.call(command, shell=True)
+
       
 for filename in jsonfiles:
   jsonobj = getJsonObj(filename)
