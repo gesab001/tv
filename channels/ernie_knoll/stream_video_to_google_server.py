@@ -56,7 +56,7 @@ for filename in jsonfiles:
     updateJsonObj(video_id)
     jsonobj = getJsonObj(filename)
     #stream(jsonobj)
-    streamToMacbookProServer(jsonobj)
+    #streamToMacbookProServer(jsonobj)
     streamToGoogleCloudServer(jsonobj)
     #else:
     #  break    
