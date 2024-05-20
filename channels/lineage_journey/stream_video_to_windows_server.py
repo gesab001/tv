@@ -71,7 +71,7 @@ def streamToWindowServer(jsonobj):
       #print(mp4s)
       formatobj = formats[formattype]
       url = formatobj["url"]
-      command = 'ffmpeg -re -i ' +  '"'+url+'"' + ' -vcodec libx264 -vprofile baseline -g 30 -acodec aac -strict -2  -preset fast -b:v 5M -maxrate 6M -bufsize 3M -threads 4 -f flv rtmp://192.168.1.8:'+port+'/show/stream'
+      command = 'ffmpeg -re -i ' +  '"'+url+'"' + ' -vcodec libx264 -vprofile baseline -g 30 -acodec aac -strict -2  -preset fast -b:v 5M -maxrate 6M -bufsize 3M -threads 4 -f flv rtmp://localhost:'+port+'/show/stream'
       subprocess.call(command, shell=True)
       
 for filename in jsonfiles:
