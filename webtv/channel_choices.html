@@ -2,7 +2,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
-  <script src="app.js" type="text/javascript" ></script>
 </head>
 
 <style>
@@ -40,6 +39,67 @@
 
 
 </body>
+
+<script>
+function fetchVideos(data){
+	var containerList = document.getElementById("containerList");
+	channelNumber = 0;
+	for (channel in data["channels"]){
+		channelNumber = channelNumber + 1;
+		var jsonItem = data["channels"][channel];
+		var channelName = jsonItem["channelName"];
+		var videos = jsonItem["videos"];
+        var videoTitle = videos[0]["title"];
+		console.log(videoTitle);
+
+		var videoUrl = videos[0]["url"];
+		console.log(videoUrl);
+
+		var cardContainer = document.createElement("DIV");
+		cardContainer.className = "cardContainer"; 
+				var gameUrlEl = document.createElement("DIV");
+
+		var channelEl = document.createElement("DIV");
+		var videoTitleEl = document.createElement("DIV");
+
+		channelEl.innerHTML = channelNumber + ". " + channelName;
+		channelEl.className = "title";
+		const video = document.createElement("video");
+
+		// Set the video's attributes
+		video.src = videoUrl;
+		video.autoplay = false;
+		video.controls = true;
+		video.width = 400;
+		video.height = 400;
+		video.padding = "10px";
+
+		
+		videoTitleEl.innerHTML = videoTitle ;
+
+		gameUrlEl.appendChild(video);
+		gameUrlEl.appendChild(channelEl);
+		gameUrlEl.appendChild(videoTitleEl);
+		cardContainer.appendChild(gameUrlEl)
+		containerList.appendChild(cardContainer);
+		
+		
+		
+
+	}
+	
+}
+
+function fetchTitles(filename){
+	
+fetch(filename)
+  .then((response) => response.json())
+  .then(fetchVideos);
+  
+}
+
+
+</script>
 
 <script>
 var url = window.location.pathname;
