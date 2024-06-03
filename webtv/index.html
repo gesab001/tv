@@ -1,0 +1,91 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+<div id="containerList">
+</div>
+
+
+<a href="channel_choices.html">Channel Choices</a>
+</body>
+
+<script>
+function loadTitles(data){
+    console.log("loadtitles");
+	console.log( Object.keys(data).length);
+	var containerList = document.getElementById("containerList");
+	for (subject in data){
+        console.log(subject);
+		var subjEl = document.createElement("H1");
+		subjEl.innerHTML = subject.replace("_", " ").toUpperCase();
+		containerList.appendChild(subjEl);
+		var gamelist = data[subject];
+		console.log(gamelist);
+		for (var x=0; x<gamelist.length; x++){
+		  var item = gamelist[x];
+		  console.log(item);
+		  var itemContainer = document.createElement("A");
+		  var itemEl = document.createElement("H2");
+		  var labelLink = item + " grade " +  subject.replace("_", " ");
+		  if (item==="kindergarten"){
+		    labelLink = item + " " +  subject.replace("_", " ");
+		  }
+		  itemEl.innerHTML = labelLink;
+		  itemContainer.href = item + "_grade_"+subject+".html";
+		  if (item==="kindergarten"){
+		     itemContainer.href = item + "_"+subject+".html";
+
+		  }
+		  itemContainer.appendChild(itemEl);
+		  		containerList.appendChild(itemContainer);
+
+		}
+/*
+		var cardContainer = document.createElement("DIV");
+		cardContainer.className = "cardContainer"; 
+		var gameUrlEl = document.createElement("A");
+		var titleEl = document.createElement("DIV");
+		var gradeLevelEl = document.createElement("DIV");
+		var posterEl = document.createElement("IMG");
+				posterEl.padding = "10px";
+
+		titleEl.innerHTML = title;
+		titleEl.className = "title";
+
+		
+
+		
+		gradeLevelEl.innerHTML = gradeLevel;
+		posterEl.src = poster;
+		gameUrlEl.href =  gameurl;
+		gameUrlEl.appendChild(posterEl);
+		gameUrlEl.appendChild(titleEl);
+		gameUrlEl.appendChild(gradeLevelEl);
+		cardContainer.appendChild(gameUrlEl)
+		containerList.appendChild(cardContainer);
+		
+	*/	
+		
+
+	}
+	
+}
+
+function fetchTitles(filename){
+	console.log("fetchTitles");
+fetch(filename)
+  .then((response) => response.json())
+  .then(loadTitles);
+  
+}
+
+
+fetchTitles("games.json");
+</script>
+
+
+</html>
