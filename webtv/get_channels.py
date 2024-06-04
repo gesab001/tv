@@ -61,7 +61,7 @@ def getVideoUrl(jsonobj):
       
 for channel in channels:  
   jsonfiles = shuffle("../channels/"+channel)
-  jsonobjChannels["channels"][channel] = {"channelName": "", "videos": []}  
+  jsonobjChannels["channels"][channel] = {"channelName": "", "playlist": jsonfiles, "videos": []}  
   filename = jsonfiles[0]
   jsonobjItem = getJsonObj("../channels/"+channel+"/"+filename)
   try:
